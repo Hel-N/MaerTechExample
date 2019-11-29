@@ -11,13 +11,18 @@ int main() {
     generate(v.begin(), v.end(), rand);
     
     int res = 0;
+    int mult = 1;
     
     for(int i = 0; i< v.size(); ++i){
         cout << v[i] << " ";    
         res += v[i];
     }
     
+    for(int i = 0; i< v.size(); ++i){   
+        mult *= v[i];
+    }
     cout << endl << "Result: " << res << endl;
+    cout << endl << "Multiplex: " << mult << endl;
     
     return 0;
 }
