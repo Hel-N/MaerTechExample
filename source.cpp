@@ -21,6 +21,9 @@ int main() {
     for(int i = 0; i< v.size(); ++i){   
         mult *= v[i];
     }
+    
+    int del = mult / res;
+    cout << endl << "Del: " << del << endl;
     cout << endl << "Result: " << res << endl;
     cout << endl << "Multiplex: " << mult << endl;
     
